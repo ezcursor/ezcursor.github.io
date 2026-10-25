@@ -12,7 +12,7 @@
     "skip": "Skip to content",
     "nav.about": "About", "nav.shots": "Screenshots", "nav.guide": "Guide", "nav.support": "Support",
     "hero.title": "See your cursor in every fight.",
-    "hero.lead": "EzCursor draws a big, bright cursor over Windows games with a hard-to-see one, like Last Epoch. Free and open source.",
+    "hero.lead": "EzCursor draws a big, bright cursor over action RPGs and hack-and-slash games like Diablo, Path of Exile, Grim Dawn and Last Epoch, where the default cursor gets lost among monsters and spell effects. Free and open source.",
     "hero.download": "Download free for Windows",
     "hero.os": "Windows 10 / 11",
     "hero.toggle": "EzCursor is on",
