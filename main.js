@@ -34,11 +34,15 @@
     "feat.1t": "15 ready-made cursors",
     "feat.1d": "Liquid Drop, Pink Shard and 13 Bibata cursors in Amber, Classic, Ice or a custom color, including left-handed versions.",
     "feat.2t": "Or make your own",
-    "feat.2d": "Pick a shape, color and size from 24 to 160 px, add a glow, or use your own PNG image.",
+    "feat.2d": "Pick a shape, color and size from 24 to 160 px, add a glow, or use your own PNG, animated GIF or Windows .cur and .ani cursor files.",
     "feat.3t": "Effects",
     "feat.3d": "Sparkle, neon, rainbow, ghost and bubble trails; ripple or fireworks on click.",
     "feat.4t": "Steps aside when needed",
     "feat.4d": "The real cursor returns when you open Start, Search, Alt+Tab or hover the taskbar.",
+    "feat.7t": "Pick your game in one click",
+    "feat.7d": "Ready-made suggestions for Last Epoch, Path of Exile, Diablo, Grim Dawn and more ARPGs, plus a warning when a game runs in Fullscreen.",
+    "feat.8t": "Hotkeys your way",
+    "feat.8d": "Change the on/off, shape, color and quit hotkeys so they never clash with your game's keys.",
     "feat.5t": "Light and out of the way",
     "feat.5d": "Lives in the system tray, can start with Windows and checks for updates on its own.",
     "feat.6t": "Vietnamese and English",
@@ -49,16 +53,17 @@
     "guide.2t": "Use windowed mode",
     "guide.2d": "In the game's graphics settings, choose <b>Borderless</b> or <b>Windowed</b>. EzCursor can't draw over exclusive fullscreen.",
     "guide.3t": "Pick your game",
-    "guide.3d": "Start the game, then open EzCursor. In the <b>Apps</b> tab, click <b>Refresh</b>, tick the game and click <b>Apply</b>.",
+    "guide.3d": "In EzCursor's <b>Apps</b> tab, tick your game in the suggestions (or start the game and click <b>Refresh</b> to see running games), then click <b>Apply</b>.",
     "guide.4t": "Choose a cursor you like",
     "guide.4d": "Adjust it in the <b>Cursor</b> or <b>Library</b> tab and add a trail in <b>Effects</b>. Click X to tuck EzCursor into the system tray.",
     "keys.title": "Hotkeys",
+    "keys.note": "These are the defaults. You can change them in the Options tab.",
     "keys.h": "Turn the cursor on / off", "keys.r": "Change shape", "keys.c": "Change color", "keys.q": "Quit EzCursor",
     "faq.title": "Questions",
     "faq.1q": "Can using EzCursor get my game account banned?",
     "faq.1a": "EzCursor doesn't modify files or read or write game memory; it only draws a transparent window on top of the screen. Every game has its own terms, though. Check them yourself, and avoid competitive games with strict anti-cheat.",
     "faq.2q": "I installed it but don't see the new cursor in game",
-    "faq.2a": "Check three things: the game runs in Borderless or Windowed; the game is ticked and applied in the Apps tab; EzCursor is on (Ctrl + Alt + H). The Status panel on the left of the app shows which game EzCursor is waiting for.",
+    "faq.2a": "Check three things: the game runs in Borderless or Windowed (if the Status panel shows FULLSCREEN, that's the cause); the game is ticked and applied in the Apps tab; EzCursor is on (Ctrl + Alt + H by default). The Status panel on the left of the app shows which game EzCursor is waiting for.",
     "faq.3q": "My mouse cursor disappeared",
     "faq.3a": "Open EzCursor again and quit with Ctrl + Alt + Q to bring the Windows cursor back. If that doesn't help, sign out or restart Windows.",
     "faq.4q": "Do the effects slow my game down?",
@@ -87,8 +92,8 @@
         cursor: "Chọn hình dạng, màu và kích thước, xem trước trực tiếp.",
         library: "Liquid Drop, Mảnh hồng và 13 con trỏ Bibata, có chủ đề màu và bản cho tay trái.",
         fx: "Vệt theo con trỏ, hiệu ứng khi click và nút thử ngay trên màn hình.",
-        apps: "Tích những game sẽ dùng con trỏ của EzCursor rồi bấm Áp dụng.",
-        opts: "Ngôn ngữ, khởi động cùng Windows, cập nhật và phím tắt."
+        apps: "Game đang chạy và gợi ý các game ARPG phổ biến, tích chọn rồi bấm Áp dụng.",
+        opts: "Ngôn ngữ, khởi động cùng Windows, cập nhật và phím tắt tự đặt."
       }
     },
     en: {
@@ -102,8 +107,8 @@
         cursor: "Pick a shape, color and size with a live preview.",
         library: "Liquid Drop, Pink Shard and 13 Bibata cursors, with color themes and left-handed versions.",
         fx: "Cursor trails, click effects and a button to try them on screen.",
-        apps: "Tick the games that should use the EzCursor cursor, then click Apply.",
-        opts: "Language, start with Windows, updates and hotkeys."
+        apps: "Running games plus suggested popular ARPGs. Tick them and click Apply.",
+        opts: "Language, start with Windows, updates and custom hotkeys."
       }
     }
   };

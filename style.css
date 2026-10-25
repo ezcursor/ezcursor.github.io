@@ -195,6 +195,7 @@ section.wrap { padding-block: clamp(64px, 9vw, 112px); }
 .keys table { width: 100%; border-collapse: collapse; margin-top: 12px; }
 .keys td { padding: 11px 0; border-top: 1px solid var(--line); font-size: 15px; }
 .keys td:first-child { white-space: nowrap; padding-right: 16px; }
+.keys-note { font-size: 14px; color: var(--muted); padding: 10px 0 12px; border-top: 1px solid var(--line); }
 kbd {
   display: inline-block; min-width: 26px; text-align: center;
   font: 600 13px var(--head); color: var(--ink);
