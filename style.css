@@ -176,6 +176,30 @@ section.wrap { padding-block: clamp(64px, 9vw, 112px); }
 }
 .feat-list strong { display: block; font: 600 18px var(--head); color: var(--ink); margin-bottom: 2px; }
 
+/* ---------- Thư viện con trỏ */
+.library { border-top: 1px solid var(--line); }
+.lib-lead { max-width: var(--measure); margin-top: 12px; }
+.lib-lead code { font-size: 0.9em; color: var(--ink); }
+.lib-grid { margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+.lib-card {
+  position: relative; margin: 0; padding: 22px 14px 16px; display: flex; flex-direction: column; align-items: center; gap: 10px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 14px; text-align: center;
+  transition: border-color .2s, transform .2s;
+}
+.lib-card:hover { border-color: #3A4560; transform: translateY(-2px); }
+.lib-card img { width: 84px; height: 84px; object-fit: contain; }
+.lib-card figcaption { font: 600 16px var(--head); color: var(--ink); line-height: 1.3; }
+.lib-dl {
+  margin-top: auto; font: 600 14px var(--head); color: var(--ink); text-decoration: none;
+  padding: 7px 18px; border-radius: 9px; border: 1px solid var(--pink); background: rgba(255, 46, 147, 0.10);
+}
+.lib-dl:hover { background: rgba(255, 46, 147, 0.22); }
+.lib-new {
+  position: absolute; top: 10px; left: 10px; font: 700 11px var(--head); letter-spacing: .06em;
+  color: #0B0D12; background: var(--mint); border-radius: 6px; padding: 1px 7px;
+}
+.lib-empty { margin-top: 24px; color: var(--muted); }
+
 /* ---------- Hướng dẫn */
 .guide { border-top: 1px solid var(--line); display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px clamp(32px, 6vw, 80px); }
 .guide h2 { grid-column: 1 / -1; }

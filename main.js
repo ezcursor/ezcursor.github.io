@@ -30,6 +30,10 @@
     "shots.title": "The app",
     "shots.ingame": "In game",
     "tab.cursor": "Cursor", "tab.library": "Library", "tab.fx": "Effects", "tab.apps": "Apps", "tab.opts": "Options",
+    "nav.lib": "Library",
+    "lib.title": "Cursor library",
+    "lib.lead": "Free to download, with new designs added regularly. In EzCursor, open <b>Library → Online</b> to use them right away, or download the <code>.cur</code> file and click <b>+ Add cursor</b> under <b>Yours</b>.",
+    "lib.empty": "Couldn't load the library. Try reloading the page in a few minutes.",
     "feat.title": "What's inside",
     "feat.1t": "27 ready-made cursors",
     "feat.1d": "The EzCursor set of 14 game-style cursors (original colors or any color you like) and 13 Bibata cursors in Amber, Classic and Ice, including left-handed versions.",
@@ -96,6 +100,7 @@
       account: "Số tài khoản", bank: "Ngân hàng", paypalBtn: "Ủng hộ qua PayPal",
       pending: "Chưa điền thông tin. Mở file config.js để thêm.",
       missingShot: "Chưa có ảnh. Thêm file vào", shotAlt: "Tab {t} của EzCursor",
+      libDl: "Tải về", libNew: "MỚI",
       caps: {
         cursor: "Chọn hình dạng, màu và kích thước, xem trước trực tiếp. Ô Đang chỉnh chọn hồ sơ của từng game.",
         library: "Liquid Drop, Mảnh hồng và 13 con trỏ Bibata, có chủ đề màu và bản cho tay trái.",
@@ -111,6 +116,7 @@
       account: "Account number", bank: "Bank", paypalBtn: "Support via PayPal",
       pending: "Not filled in yet. Edit config.js to add it.",
       missingShot: "No image yet. Add the file", shotAlt: "EzCursor {t} tab",
+      libDl: "Download", libNew: "NEW",
       caps: {
         cursor: "Pick a shape, color and size with a live preview. The Editing box picks each game's profile.",
         library: "Liquid Drop, Pink Shard and 13 Bibata cursors, with color themes and left-handed versions.",
@@ -151,9 +157,42 @@
     renderRelease();
     renderSupport();
     renderGameShots();
+    renderLibrary();
   }
 
   $$(".lang button").forEach(function (b) { b.addEventListener("click", function () { setLang(b.dataset.lang); }); });
+
+  // ------------------------------------------------------------------ Thư viện con trỏ (catalog/catalog.json)
+  var library = null;
+  function renderLibrary() {
+    var grid = $("#lib-grid");
+    if (!grid || !library) return;
+    grid.textContent = "";
+    var now = Date.now();
+    library.forEach(function (c) {
+      var name = (c.name && (c.name[lang] || c.name.vi)) || c.id;
+      var card = document.createElement("figure");
+      card.className = "lib-card";
+      var img = document.createElement("img");
+      img.src = "catalog/" + c.thumb; img.alt = name; img.width = 112; img.height = 112; img.loading = "lazy";
+      var cap = document.createElement("figcaption");
+      cap.textContent = name;
+      var a = document.createElement("a");
+      a.className = "lib-dl"; a.href = "catalog/" + c.file;
+      a.setAttribute("download", name + c.file.slice(c.file.lastIndexOf(".")));
+      a.textContent = STR[lang].libDl;
+      if (c.added && now - Date.parse(c.added) <= 30 * 864e5) {
+        var b = document.createElement("span"); b.className = "lib-new"; b.textContent = STR[lang].libNew;
+        card.appendChild(b);
+      }
+      card.appendChild(img); card.appendChild(cap); card.appendChild(a);
+      grid.appendChild(card);
+    });
+  }
+  fetch("catalog/catalog.json", { cache: "no-cache" })
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+    .then(function (d) { library = (d && d.cursors) || []; renderLibrary(); if (!library.length) $("#lib-empty").hidden = false; })
+    .catch(function () { var e = $("#lib-empty"); if (e) e.hidden = false; });
 
   // ------------------------------------------------------------------ Ảnh giao diện theo tab
   var currentShot = "cursor";
