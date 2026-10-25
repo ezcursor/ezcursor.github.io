@@ -77,7 +77,7 @@
     "support.bank": "Bank transfer",
     "support.paypal": "For supporters outside Vietnam.",
     "support.alt": "Can't donate? Starring the <a href=\"https://github.com/ezcursor/EzCursor\" target=\"_blank\" rel=\"noopener\">GitHub repo</a> or telling a friend about EzCursor helps too.",
-    "foot.license": "Released under the <a href=\"https://github.com/ezcursor/EzCursor/blob/main/LICENSE\" target=\"_blank\" rel=\"noopener\">GPL-3.0</a> license. Bibata cursors by <a href=\"https://github.com/ful1e5/Bibata_Cursor\" target=\"_blank\" rel=\"noopener\">Abdulkaiz Khatri</a>, GPL-3.0.",
+    "foot.license": "Released under the GPL-3.0 license. Bibata cursors by Abdulkaiz Khatri, GPL-3.0.",
     "foot.releases": "All versions", "foot.issues": "Report a bug"
   };
 
