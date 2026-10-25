@@ -39,6 +39,8 @@
     "feat.3d": "Sparkle, neon, rainbow, ghost and bubble trails; ripple or fireworks on click.",
     "feat.4t": "Steps aside when needed",
     "feat.4d": "The real cursor returns when you open Start, Search, Alt+Tab or hover the taskbar.",
+    "feat.9t": "A style for every game",
+    "feat.9d": "Give each game its own profile with a different cursor and effects. EzCursor switches as you change games.",
     "feat.7t": "Pick your game in one click",
     "feat.7d": "Ready-made suggestions for Last Epoch, Path of Exile, Diablo, Grim Dawn and more ARPGs, plus a warning when a game runs in Fullscreen.",
     "feat.8t": "Hotkeys your way",
@@ -55,7 +57,7 @@
     "guide.3t": "Pick your game",
     "guide.3d": "In EzCursor's <b>Apps</b> tab, tick your game in the suggestions (or start the game and click <b>Refresh</b> to see running games), then click <b>Apply</b>.",
     "guide.4t": "Choose a cursor you like",
-    "guide.4d": "Adjust it in the <b>Cursor</b> or <b>Library</b> tab and add a trail in <b>Effects</b>. Click X to tuck EzCursor into the system tray.",
+    "guide.4d": "Adjust it in the <b>Cursor</b> or <b>Library</b> tab and add a trail in <b>Effects</b>. Want a different look per game? Click <b>+ Own profile</b> on the game's row in the Apps tab. Click X to tuck EzCursor into the system tray.",
     "keys.title": "Hotkeys",
     "keys.note": "These are the defaults. You can change them in the Options tab.",
     "keys.h": "Turn the cursor on / off", "keys.r": "Change shape", "keys.c": "Change color", "keys.q": "Quit EzCursor",
@@ -89,10 +91,10 @@
       pending: "Chưa điền thông tin. Mở file config.js để thêm.",
       missingShot: "Chưa có ảnh. Thêm file vào", shotAlt: "Tab {t} của EzCursor",
       caps: {
-        cursor: "Chọn hình dạng, màu và kích thước, xem trước trực tiếp.",
+        cursor: "Chọn hình dạng, màu và kích thước, xem trước trực tiếp. Ô Đang chỉnh chọn hồ sơ của từng game.",
         library: "Liquid Drop, Mảnh hồng và 13 con trỏ Bibata, có chủ đề màu và bản cho tay trái.",
         fx: "Vệt theo con trỏ, hiệu ứng khi click và nút thử ngay trên màn hình.",
-        apps: "Game đang chạy và gợi ý các game ARPG phổ biến, tích chọn rồi bấm Áp dụng.",
+        apps: "Game đang chạy và gợi ý các game ARPG phổ biến. Tích chọn, bấm Áp dụng, hoặc tạo hồ sơ riêng cho từng game.",
         opts: "Ngôn ngữ, khởi động cùng Windows, cập nhật và phím tắt tự đặt."
       }
     },
@@ -104,10 +106,10 @@
       pending: "Not filled in yet. Edit config.js to add it.",
       missingShot: "No image yet. Add the file", shotAlt: "EzCursor {t} tab",
       caps: {
-        cursor: "Pick a shape, color and size with a live preview.",
+        cursor: "Pick a shape, color and size with a live preview. The Editing box picks each game's profile.",
         library: "Liquid Drop, Pink Shard and 13 Bibata cursors, with color themes and left-handed versions.",
         fx: "Cursor trails, click effects and a button to try them on screen.",
-        apps: "Running games plus suggested popular ARPGs. Tick them and click Apply.",
+        apps: "Running games plus suggested popular ARPGs. Tick and Apply, or give a game its own profile.",
         opts: "Language, start with Windows, updates and custom hotkeys."
       }
     }
