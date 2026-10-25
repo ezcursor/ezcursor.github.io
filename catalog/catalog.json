@@ -1,0 +1,84 @@
+{
+ "schema": 1,
+ "updated": "2026-10-25",
+ "cursors": [
+  {
+   "id": "gold_sword",
+   "name": {
+    "vi": "Kiếm Hoàng kim",
+    "en": "Golden Blade"
+   },
+   "file": "gold_sword.cur",
+   "thumb": "gold_sword.png",
+   "size": 27568,
+   "sha256": "c2e804fde2858c6ef5fcb1f406223608bb6ad34fa198cf2c3bcec8b79222fa6f",
+   "added": "2026-10-25",
+   "author": "EzCursor"
+  },
+  {
+   "id": "hell_flame",
+   "name": {
+    "vi": "Lửa Địa ngục",
+    "en": "Hellfire"
+   },
+   "file": "hell_flame.cur",
+   "thumb": "hell_flame.png",
+   "size": 32061,
+   "sha256": "dc64d0d20ca57f478054ed7c38af04e2e1a7a285705195db13b6955d7d7eeff9",
+   "added": "2026-10-25",
+   "author": "EzCursor"
+  },
+  {
+   "id": "emerald_crystal",
+   "name": {
+    "vi": "Pha lê Ngọc lục",
+    "en": "Emerald Crystal"
+   },
+   "file": "emerald_crystal.cur",
+   "thumb": "emerald_crystal.png",
+   "size": 26452,
+   "sha256": "ec8dd729af57558bea32d3474474831a14169981921efd9cd0b7743823b94fdb",
+   "added": "2026-10-25",
+   "author": "EzCursor"
+  },
+  {
+   "id": "blood_arrow",
+   "name": {
+    "vi": "Mũi tên Huyết",
+    "en": "Blood Arrow"
+   },
+   "file": "blood_arrow.cur",
+   "thumb": "blood_arrow.png",
+   "size": 24713,
+   "sha256": "470a8c31f1187a540feead0f3b52c50afc4865a7ab349551deab8d857eb19886",
+   "added": "2026-10-25",
+   "author": "EzCursor"
+  },
+  {
+   "id": "void_rune",
+   "name": {
+    "vi": "Rune Hư không",
+    "en": "Void Rune"
+   },
+   "file": "void_rune.cur",
+   "thumb": "void_rune.png",
+   "size": 29739,
+   "sha256": "2ae7ca9a6e572f01ea2493d3ac130964fef30960cbc683cda0a911856f1e75b6",
+   "added": "2026-10-25",
+   "author": "EzCursor"
+  },
+  {
+   "id": "toxic_orb",
+   "name": {
+    "vi": "Cầu Độc",
+    "en": "Toxic Orb"
+   },
+   "file": "toxic_orb.cur",
+   "thumb": "toxic_orb.png",
+   "size": 38589,
+   "sha256": "e9139b10aef7123ad152c8adf6979a49ac0b78c029c2954695357edaac540668",
+   "added": "2026-10-25",
+   "author": "EzCursor"
+  }
+ ]
+}
