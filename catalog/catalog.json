@@ -1,7 +1,85 @@
 {
  "schema": 1,
- "updated": "2026-10-25",
+ "updated": "2026-10-26",
  "cursors": [
+  {
+   "id": "sunset_blade",
+   "name": {
+    "vi": "Kiếm Hoàng hôn",
+    "en": "Sunset Blade"
+   },
+   "file": "sunset_blade.cur",
+   "thumb": "sunset_blade.png",
+   "size": 29695,
+   "sha256": "d2d35a52e05075212c1173e54304508da43c059d6dd244c2feca45ac268b77cd",
+   "added": "2026-10-26",
+   "author": "EzCursor"
+  },
+  {
+   "id": "ocean_drop",
+   "name": {
+    "vi": "Giọt Đại dương",
+    "en": "Ocean Drop"
+   },
+   "file": "ocean_drop.cur",
+   "thumb": "ocean_drop.png",
+   "size": 43117,
+   "sha256": "1e3dcabf6d1a40fdfbbb348b4bd6a809fb144af5f19092317a8c91e4c7ace47c",
+   "added": "2026-10-26",
+   "author": "EzCursor"
+  },
+  {
+   "id": "rainbow_crystal",
+   "name": {
+    "vi": "Pha lê Cầu vồng",
+    "en": "Rainbow Crystal"
+   },
+   "file": "rainbow_crystal.cur",
+   "thumb": "rainbow_crystal.png",
+   "size": 38088,
+   "sha256": "8f70092f8965be0a6e0bbafced4de7caa878d1a54002de3c36d80641929121fb",
+   "added": "2026-10-26",
+   "author": "EzCursor"
+  },
+  {
+   "id": "void_feather",
+   "name": {
+    "vi": "Lông vũ Hư không",
+    "en": "Void Feather"
+   },
+   "file": "void_feather.cur",
+   "thumb": "void_feather.png",
+   "size": 34869,
+   "sha256": "23cd0e1ca4224fa213ef1faf7f38962774d96c55dd09de6837724cda8dcc3cd1",
+   "added": "2026-10-26",
+   "author": "EzCursor"
+  },
+  {
+   "id": "frost_star",
+   "name": {
+    "vi": "Ngôi sao Băng giá",
+    "en": "Frost Star"
+   },
+   "file": "frost_star.cur",
+   "thumb": "frost_star.png",
+   "size": 20037,
+   "sha256": "288523844b69ece9cc2dc4d665075e5581ab3345ac01318e955f789a5f29f32e",
+   "added": "2026-10-26",
+   "author": "EzCursor"
+  },
+  {
+   "id": "toxic_spear",
+   "name": {
+    "vi": "Giáo Độc dược",
+    "en": "Toxic Spear"
+   },
+   "file": "toxic_spear.cur",
+   "thumb": "toxic_spear.png",
+   "size": 23879,
+   "sha256": "0b38afd6f934ae8bef2bca6d160c027598b8f8b0f393600bbd4b1984a3eafae8",
+   "added": "2026-10-26",
+   "author": "EzCursor"
+  },
   {
    "id": "gold_sword",
    "name": {

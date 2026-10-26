@@ -178,7 +178,7 @@
       var cap = document.createElement("figcaption");
       cap.textContent = name;
       var a = document.createElement("a");
-      a.className = "lib-dl"; a.href = "catalog/" + c.file;
+      a.className = "lib-dl"; a.href = "catalog/" + c.file; a.dataset.id = c.id;
       a.setAttribute("download", name + c.file.slice(c.file.lastIndexOf(".")));
       a.textContent = STR[lang].libDl;
       if (c.added && now - Date.parse(c.added) <= 30 * 864e5) {
@@ -281,6 +281,17 @@
   }
 
   // ------------------------------------------------------------------ Ủng hộ
+  // Đếm lượt bấm tải (GoatCounter – sự kiện, không lưu thông tin cá nhân)
+  function track(name) {
+    try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({ path: name, title: name, event: true }); } catch (e) {}
+  }
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a");
+    if (!a) return;
+    if (a.hasAttribute("data-download")) track("tai-app");
+    else if (a.classList.contains("lib-dl")) track("tai-con-tro/" + (a.dataset.id || ""));
+  });
+
   function toast(msg) {
     var t = $(".toast");
     t.textContent = msg; t.classList.add("show");
