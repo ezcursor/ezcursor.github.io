@@ -56,9 +56,9 @@
     "feat.8t": "Hotkeys your way",
     "feat.8d": "Change the on/off, cursor, color, find and quit hotkeys so they never clash with your game's keys.",
     "feat.5t": "Light and out of the way",
-    "feat.5d": "Lives in the system tray, can start with Windows and checks for updates on its own.",
-    "feat.6t": "Vietnamese and English",
-    "feat.6d": "Switch language in the Options tab, no restart needed.",
+    "feat.5d": "Lives in the system tray, can start with Windows and checks for updates on its own. Available in Vietnamese and English.",
+    "feat.13t": "Ombre colors",
+    "feat.13d": "The cursor blends from tip to tail with 8 ready-made gradients or 2–3 colors of your own, and the gradient can flow.",
     "guide.title": "Get started in 4 steps",
     "guide.1t": "Download and install",
     "guide.1d": "Run the <code>EzCursor_Setup</code> file you downloaded. If Windows shows <em>“Windows protected your PC”</em>, click <b>More info</b> and then <b>Run anyway</b>. No admin rights needed.",
@@ -102,7 +102,7 @@
       missingShot: "Chưa có ảnh. Thêm file vào", shotAlt: "Tab {t} của EzCursor",
       libDl: "Tải về", libNew: "MỚI",
       caps: {
-        cursor: "Chọn hình dạng, màu và kích thước, xem trước trực tiếp. Ô Đang chỉnh chọn hồ sơ của từng game.",
+        cursor: "Chọn hình dạng, màu hoặc dải màu ombre và kích thước, xem trước trực tiếp. Ô Đang chỉnh chọn hồ sơ của từng game.",
         library: "Bộ EzCursor, Bibata, con trỏ của bạn và kho Trực tuyến với mẫu mới tải về chỉ bằng một cú bấm. Nút ☆ đánh dấu con trỏ yêu thích.",
         fx: "Vệt theo con trỏ, hiệu ứng khi click và nút thử ngay trên màn hình.",
         apps: "Game đang chạy và gợi ý các game ARPG phổ biến. Tích chọn, bấm Áp dụng, hoặc tạo hồ sơ riêng cho từng game.",
@@ -118,7 +118,7 @@
       missingShot: "No image yet. Add the file", shotAlt: "EzCursor {t} tab",
       libDl: "Download", libNew: "NEW",
       caps: {
-        cursor: "Pick a shape, color and size with a live preview. The Editing box picks each game's profile.",
+        cursor: "Pick a shape, a color or ombre gradient and a size with a live preview. The Editing box picks each game's profile.",
         library: "The EzCursor set, Bibata, your own cursors and the Online catalog with new designs one click away. The ☆ button marks favorites.",
         fx: "Cursor trails, click effects and a button to try them on screen.",
         apps: "Running games plus suggested popular ARPGs. Tick and Apply, or give a game its own profile.",
@@ -206,7 +206,7 @@
     });
     var img = $("#shot-img");
     var label = (tabs.filter(function (t) { return t.dataset.shot === key; })[0] || {}).textContent || key;
-    img.src = "images/app-" + key + "-" + lang + ".webp?v=2.0.0";
+    img.src = "images/app-" + key + "-" + lang + ".webp?v=2.1.0";
     img.alt = STR[lang].shotAlt.replace("{t}", label);
     $("#shot-cap").textContent = STR[lang].caps[key];
   }
@@ -223,7 +223,7 @@
   // Tải trước ảnh các tab để bấm là hiện ngay
   window.addEventListener("load", function () {
     ["vi", "en"].forEach(function (l) {
-      tabs.forEach(function (t) { new Image().src = "images/app-" + t.dataset.shot + "-" + l + ".webp?v=2.0.0"; });
+      tabs.forEach(function (t) { new Image().src = "images/app-" + t.dataset.shot + "-" + l + ".webp?v=2.1.0"; });
     });
   });
 
