@@ -25,7 +25,7 @@
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preload" href="fonts/ChakraPetch-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/BeVietnamPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=2.2.0">
+<link rel="stylesheet" href="style.css?v=2.2.3">
 <!-- Thống kê lượt xem (GoatCounter, không dùng cookie): https://ezcursor.goatcounter.com -->
 <script data-goatcounter="https://ezcursor.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
@@ -125,6 +125,13 @@
 
   <div class="ingame" id="trong-game" hidden>
     <h3 data-i18n="shots.ingame">Trong game</h3>
+    <figure class="ingame-video">
+      <video autoplay muted loop playsinline preload="metadata" poster="images/le-loop.jpg" width="1280" height="720" aria-label="EzCursor trong Last Epoch">
+        <source src="images/le-loop.webm" type="video/webm">
+        <source src="images/le-loop.mp4" type="video/mp4">
+      </video>
+      <figcaption data-i18n="shots.video">Con trỏ EzCursor (giọt nước hồng, viền vàng) giữa đám quái trong Last Epoch.</figcaption>
+    </figure>
     <div class="ingame-grid"></div>
   </div>
 </section>
@@ -261,7 +268,7 @@
 </footer>
 
 <div class="toast" role="status" aria-live="polite"></div>
-<script src="config.js?v=2.2.0"></script>
-<script src="main.js?v=2.2.0"></script>
+<script src="config.js?v=2.2.3"></script>
+<script src="main.js?v=2.2.3"></script>
 </body>
 </html>

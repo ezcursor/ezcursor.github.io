@@ -157,6 +157,9 @@ section.wrap { padding-block: clamp(64px, 9vw, 112px); }
 .ingame { margin-top: 72px; }
 .ingame-grid { margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 .ingame figure { margin: 0; }
+.ingame-video { margin-top: 20px !important; }
+.ingame-video video { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--line); background: #000; }
+.ingame-video figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); }
 .ingame img { width: 100%; border-radius: 12px; border: 1px solid var(--line); aspect-ratio: 16 / 9; object-fit: cover; }
 .ingame figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); }
 .ingame .missing {

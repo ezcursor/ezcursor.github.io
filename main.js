@@ -29,6 +29,7 @@
     "about.f3d": "Released under the GPL-3.0 license, with the full source code on GitHub.",
     "shots.title": "The app",
     "shots.ingame": "In game",
+    "shots.video": "The EzCursor cursor (pink drop, yellow outline) among a crowd of monsters in Last Epoch.",
     "tab.cursor": "Cursor", "tab.library": "Library", "tab.fx": "Effects", "tab.apps": "Apps", "tab.opts": "Options",
     "nav.lib": "Library",
     "lib.title": "Cursor library",

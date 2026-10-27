@@ -7,14 +7,14 @@ window.EZ_CONFIG = {
   // ---- Ủng hộ ----
   momo: {
     phone: "",            // vd: "0901234567"
-    name: "",             // tên chủ ví, vd: "NGUYEN VAN A"
-    qr: ""                // vd: "images/momo-qr.png"
+    name: "DINH CHI KHANG", // tên chủ ví, vd: "NGUYEN VAN A"
+    qr: "images/momo-qr.webp"
   },
   bank: {
-    bank: "",             // vd: "Vietcombank"
-    account: "",          // số tài khoản
-    name: "",             // tên chủ tài khoản
-    qr: ""                // vd: "images/bank-qr.png"
+    bank: "Vietcombank",
+    account: "0381000559185",
+    name: "DINH CHI KHANG",
+    qr: "images/bank-qr.png"
   },
   paypal: {
     url: ""               // vd: "https://paypal.me/tencuaban"
@@ -23,8 +23,8 @@ window.EZ_CONFIG = {
   // ---- Ảnh trong game ----
   // Thêm ảnh vào docs/images/ rồi khai báo ở đây. Chú thích có thể viết 2 thứ tiếng.
   gameShots: [
-    { src: "images/game-1.jpg", vi: "Liquid Drop với vệt lấp lánh trong Last Epoch", en: "Liquid Drop with a sparkle trail in Last Epoch" },
-    { src: "images/game-2.jpg", vi: "Con trỏ Bibata Amber giữa trận đánh", en: "Bibata Amber cursor mid-fight" },
-    { src: "images/game-3.jpg", vi: "Hiệu ứng pháo hoa khi click", en: "Fireworks effect on click" }
+    { src: "images/game-1.webp", vi: "Giữa vòng lửa và quái đông, con trỏ vẫn dễ thấy", en: "Easy to spot among fire and crowds of monsters" },
+    { src: "images/game-2.webp", vi: "Hiệu ứng phép dày đặc, con trỏ không bị chìm", en: "Heavy spell effects don't bury the cursor" },
+    { src: "images/game-3.webp", vi: "Dọn quái trong Monolith of Fate, Last Epoch", en: "Clearing a Monolith of Fate echo in Last Epoch" }
   ]
 };
