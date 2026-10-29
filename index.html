@@ -145,6 +145,7 @@
     <li><strong data-i18n="feat.10t">Kho con trỏ trực tuyến</strong> <span data-i18n="feat.10d">Mẫu mới được thêm thường xuyên ở mục Trực tuyến trong Bộ sưu tập. Bấm một lần là tải về, không cần cập nhật app.</span></li>
     <li><strong data-i18n="feat.2t">Tự tạo con trỏ</strong> <span data-i18n="feat.2d">Trình tạo con trỏ ngay trong app: 10 hình, chỉnh dáng, một màu, ombre hoặc kính mờ, viền và bóng đổ. Hoặc lưu ảnh PNG, GIF động, file .cur, .ani của riêng bạn vào Bộ sưu tập.</span></li>
     <li><strong data-i18n="feat.11t">Tìm con trỏ trong một giây</strong> <span data-i18n="feat.11d">Lạc mất con trỏ giữa trận? Bấm Ctrl + Alt + F hoặc lắc chuột, con trỏ phóng to và tỏa vòng sáng.</span></li>
+    <li><strong data-i18n="feat.14t">Hiện con trỏ khi livestream</strong> <span data-i18n="feat.14d">Người xem stream thấy đúng con trỏ EzCursor của bạn qua nguồn Browser của OBS. Không đụng vào game.</span></li>
     <li><strong data-i18n="feat.12t">Yêu thích và đổi nhanh</strong> <span data-i18n="feat.12d">Đánh dấu ☆ con trỏ yêu thích rồi đổi qua lại bằng Ctrl + Alt + R, hoặc chuột phải icon ở khay hệ thống để chọn.</span></li>
     <li><strong data-i18n="feat.3t">Hiệu ứng</strong> <span data-i18n="feat.3d">Vệt lấp lánh, vệt neon, cầu vồng, bóng mờ, bong bóng; gợn sóng hoặc pháo hoa khi click; viền màu khi giữ chuột trái hoặc phải.</span></li>
     <li><strong data-i18n="feat.4t">Tự nhường chỗ</strong> <span data-i18n="feat.4d">Con trỏ thật hiện lại khi bạn mở menu Start, Search, Alt+Tab hoặc rê lên taskbar.</span></li>
@@ -223,6 +224,10 @@
     <summary data-i18n="faq.5q">Làm sao gỡ cài đặt?</summary>
     <p data-i18n="faq.5a">Vào Settings → Apps → Installed apps, chọn EzCursor và bấm Uninstall. Cài đặt đã lưu cũng được xóa theo.</p>
   </details>
+  <details>
+    <summary data-i18n="faq.6q">Người xem stream không thấy con trỏ EzCursor</summary>
+    <p data-i18n="faq.6a">Game Capture của OBS không ghi được lớp phủ của EzCursor. Vào tab Tùy chọn, bật "Hiện con trỏ trên stream (OBS)" và bấm "Sao chép link". Trong OBS, thêm nguồn Browser, dán link vào ô URL, đặt Width / Height bằng khung OBS (vd 1920 × 1080) rồi kéo nguồn này lên trên Game Capture. Khung OBS nên cùng tỉ lệ với game. Nếu bạn tắt "Ẩn con trỏ thật của game", hãy tắt Capture Cursor trong Game Capture để không hiện hai con trỏ.</p>
+  </details>
 </section>
 
 <!-- Ủng hộ -->
@@ -268,7 +273,7 @@
 </footer>
 
 <div class="toast" role="status" aria-live="polite"></div>
-<script src="config.js?v=2.2.3"></script>
-<script src="main.js?v=2.2.3"></script>
+<script src="config.js?v=2.3.0"></script>
+<script src="main.js?v=2.3.0"></script>
 </body>
 </html>
